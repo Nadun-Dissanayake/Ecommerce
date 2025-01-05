@@ -31,8 +31,8 @@ class UserResource extends Resource
                     ->label("Email Address")
                     ->unique(ignoreRecord: true)
                     ->maxLength(255),
-                Forms\Components\DateTimePicker::make('Verified At')
-                    ->label("Verified At")
+                Forms\Components\DateTimePicker::make('email_verified_at')
+                    ->label("Email Verified At")
                     ->default(now()),
                 Forms\Components\TextInput::make('password')
                     ->password()

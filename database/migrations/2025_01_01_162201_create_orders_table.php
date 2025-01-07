@@ -20,7 +20,7 @@ return new class extends Migration
             $table->enum('status', ['new','pending', 'processing', 'completed', 'cancelled'])->default('pending');
             $table->string('currency')->nullable();
             $table->decimal('shipping_amount', 10, 2)->nullable();
-            $table->decimal("shipping_methode", 10, 2)->nullable();
+            $table->string("shipping_methode", 10, 2)->nullable();
             $table->text("notes")->nullable();
             $table->timestamps();
         });
